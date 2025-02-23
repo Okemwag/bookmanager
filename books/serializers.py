@@ -11,6 +11,9 @@ class BookSerializer(serializers.ModelSerializer):
         fields = ['id', 'title', 'author', 'publication_date', 'isbn', 'summary']
 
     def validate_isbn(self, value):
+        """
+        Validator for ISBN. Checks that the ISBN is a 10 or 13 digit number.
+        """
         if not value.isdigit():
             raise serializers.ValidationError("ISBN must contain only digits.")
         if len(value) not in [10, 13]:
