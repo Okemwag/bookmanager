@@ -32,22 +32,21 @@ This is a simple Django application for managing a list of books. It provides RE
 ```
 bookmanager/
 ├── books/
-│   ├── migrations/          # Database migrations
+│   ├── migrations/          
 │   ├── __init__.py
-│   ├── admin.py             # Admin panel configuration
-│   ├── apps.py              # App configuration
-│   ├── models.py            # Book model and validation logic
-│   ├── serializers.py       # Serializers for the Book model
-│   ├── tests.py             # Unit tests for the API
-│   ├── urls.py              # URL routing for the API
-│   └── views.py             # API views
+│   ├── admin.py             
+│   ├── apps.py              
+│   ├── serializers.py       
+│   ├── tests.py             
+│   ├── urls.py              
+│   └── views.py            
 ├── bookmanager/
 │   ├── __init__.py
-│   ├── settings.py          # Django project settings
-│   ├── urls.py              # Root URL configuration
-│   └── wsgi.py              # WSGI configuration
-├── manage.py                # Django management script
-└── README.md                # Project documentation
+│   ├── settings.py          
+│   ├── urls.py              
+│   └── wsgi.py              
+├── manage.py                
+└── README.md                
 ```
 
 ---
@@ -172,9 +171,3 @@ GET /api/books/
 ```
 
 ---
-
-## Future Improvements
-
-1. **Authentication**: Add user authentication to restrict access to certain endpoints.
-2. **Search and Filtering**: Implement search and filtering for the book list.
-3. **Deployment**: Containerize the application using Docker and deploy it to a cloud platform.
