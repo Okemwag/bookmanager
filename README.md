@@ -75,7 +75,7 @@ bookmanager/
    - The default page size is set to 10, but this can be customized.
 
 6. **Documentation**:
-   - API documentation is generated using DRF Spectacular and Swagger UI, accessible at `/api/docs/`.
+   - API documentation is generated using DRF Spectacular and Swagger UI, accessible at `/docs/`.
 
 ---
 
